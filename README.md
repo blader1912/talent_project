@@ -6,7 +6,9 @@ Este repositorio consta de 4 archivos:
 2) transform_data.py se encarga de la transformacion y obtención de la medida. El dataset es enviado a la capa de transformacion
 3) data_storage.py permite el guardado del dataset final en la carpeta CLEAN_DATA
 4) DAG.py contiene todo lo referente a la estructura del DAG en Airflow donde hace el llamado a 3 scripts
-5) docker-compose.yaml Es la imagen necesaria para correr Airflow
+5) docker-compose.yaml Es la imagen necesaria para correr Airflow, aqui se puede ver el contenedor en Docker Desktop. Ajustar a sus necesidades en el equipo local
+
+![airflow](https://github.com/blader1912/talent_project/assets/90916311/524b6d47-dd6c-42f8-a1b5-d13ebb008641)
 
 La solución fue desarollada pensando en un flujo regular de datos con capas de INGESTA, TRANSFORMACION Y CLEAN que permita operar uno tras de otro con buenas practicas de coding. Para poder correr los archivos asegurese de tener rutas correspondientes a su equipo local editando los archivos. 
 
